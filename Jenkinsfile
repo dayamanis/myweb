@@ -26,7 +26,7 @@ pipeline {
                     echo 'Deploying application to Railway...'
                     // Uses npx to run the Railway CLI without requiring a manual install on the Jenkins agent
                     // --ci streams logs and exits when the build completes
-                    sh 'npx @railway/cli up --service "robertcoder/jenkins-tools:latest" --ci'
+                    sh 'npx @railway/cli up --service upbeat-flow --ci'
                 }
             }
         }
